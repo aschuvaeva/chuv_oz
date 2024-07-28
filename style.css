@@ -75,7 +75,7 @@ body {
 }
 
 .number-input{
-    margin-left: 20px;
+    margin-left: 22px;
 }
 
 .number-input input[type="number"],
@@ -109,7 +109,7 @@ body {
 
 .input-label,
 .label-text {
-    margin-left: 22px; 
+    margin-left: 20px; 
     font-size: 18px; 
     font-family: 'Inter';
 }
