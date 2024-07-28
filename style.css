@@ -4,7 +4,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('https://aschuvaeva.github.io/chuv_oz/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* inter-500 - latin */
   @font-face {
@@ -12,7 +12,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('https://aschuvaeva.github.io/chuv_oz/fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* inter-600 - latin */
   @font-face {
@@ -20,7 +20,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('https://aschuvaeva.github.io/chuv_oz/fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   
 body {
