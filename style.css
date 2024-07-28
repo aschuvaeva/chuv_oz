@@ -1,0 +1,173 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://aschuvaeva.github.io/ooozzzon_ch/fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.progress-title {
+    text-align: left;
+    font-size: 22px; 
+    font-family: 'Inter', sans-serif; 
+    color: black; 
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    text-align: center;
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 16;
+}
+
+.progress-value {
+    fill: none;
+    stroke: #0061FF;
+    stroke-width: 16;
+    transition: stroke-dasharray 0.5s ease;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.number-input,
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.number-input{
+    margin-left: 20px;
+}
+
+.number-input input[type="number"],
+.switch input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid black; 
+    border-radius: 34px; 
+    background-color: white;
+    width: 40px;
+    outline: none;
+    text-align: center;
+}
+
+.number-input input[type="number"]::-webkit-inner-spin-button,
+.number-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-slider {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 34px;
+    background-color: transparent;
+    border-radius: 34px;
+    transform: translateY(-50%);
+}
+
+.input-label,
+.label-text {
+    margin-left: 22px; 
+    font-size: 18px; 
+    font-family: 'Inter';
+}
+
+.switch {
+    position: relative;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+    cursor: pointer;
+    width: 60px; 
+    height: 34px; 
+    background-color: #ccc;
+    border-radius: 34px; 
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%; 
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #0061FF; 
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.progress-container,
+.controls {
+    margin: 50px; 
+}
+
+@media (min-width: 568px) {
+    .container {
+        flex-direction: row;
+        justify-content: center; 
+    }
+}
